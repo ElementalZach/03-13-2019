@@ -1,0 +1,68 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  margin: 0;
+}
+.force::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.section {
+  margin: 0;
+  padding: 36px;
+}
+.section .center {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.column {
+  float: left;
+  width: 100%;
+}
+.section.research {
+  background-color: #123466;
+}
+.section.research h2 {
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 80%;
+  margin-bottom: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 600px) {
+  .section.research h2 {
+    font-size: 48;
+  }
+}
+.section.research .teaser {
+  background-color: #FFFFFF;
+  padding: 24px;
+}
+@media screen and (min-width: 900px) {
+  .section.research .teaser {
+    min-height: 300px;
+    width: 30%;
+  }
+}
+.section.research .teaser + .teaser {
+  margin-top: 24px;
+}
+@media screen and (min-width: 900px) {
+  .section.research .teaser + .teaser {
+    margin-left: 5%;
+    margin-top: 0;
+  }
+}

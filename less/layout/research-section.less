@@ -1,0 +1,39 @@
+// main: ../main.less
+
+.section.research {
+  background-color: #123466;
+
+  h2 {
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 80%;
+    margin-bottom: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 600px) {
+      font-size: 48;
+    }
+  }
+
+  .teaser {
+    background-color: #FFFFFF;
+    padding: 24px;
+
+    @media screen and (min-width: 900px) {
+      min-height: 300px;
+      width: 30%;
+    }
+
+    + .teaser{
+      margin-top: 24px;
+
+      @media screen and (min-width: 900px) {
+        margin-left: 5%;
+        margin-top: 0;
+
+    }
+
+  }
+}
+}
